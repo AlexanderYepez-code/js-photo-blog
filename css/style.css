@@ -1,17 +1,20 @@
 /* // RESET */
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
-body{
+
+body {
     font-family: "Edu TAS Beginner", cursive;
 }
-img{
+
+img {
     width: 100%;
 }
-header{
-    
+
+header {
+
     font-size: 2rem;
     background-image: url(../img/wall.png);
     background-position: auto;
@@ -21,43 +24,88 @@ header{
     width: 100%;
     top: 0;
     left: 0;
+    z-index: 999999;
 }
-main{
+
+main {
     padding-top: 190px;
 
     background-image: url(../img/cork.png);
     background-size: auto;
-    height: 100vh;
-    
+    min-height: 100vh;
+
 }
-.card{
+
+.card {
     background-color: white;
     border: 2px solid black;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.2s ease;
+
 }
-.p-20{
+.card:hover {
+    transform: rotate(5deg) scale(1.03);
+    
+}
+.card:hover .puntina{
+    opacity: 0;
+    transition: opacity 0.2 ease-in-out;
+}
+
+
+.puntina {
+    width: 50px;
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+
+.p-20 {
     padding: 20px;
 }
-.gap{
-    gap: 50px;
+
+.gap {
+    gap: 30px;
 
 }
 
-.col{
+.fontdate {
+    font-family: "Sometype Mono", monospace;
+}
+
+.uppercase {
+    text-transform: uppercase;
+}
+
+.col {
     width: 30%;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 
 }
-.wrap{
+
+.wrap {
     flex-wrap: wrap;
 }
-.jc-content-between{
+
+.jc-content-between {
     justify-content: space-between;
 
 }
-.container{
-    margin: auto 100px ;
+
+.container {
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+
+.btn {
+    padding: 20px 30px;
+    background-color: #1071e0;
+    color: white;
+
 
 }
