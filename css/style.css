@@ -41,6 +41,7 @@ main {
     border: 2px solid black;
     box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5);
     transition: transform 0.2s ease;
+    margin-bottom: 100px;
 
 }
 .card:hover {
@@ -56,17 +57,20 @@ main {
 .puntina {
     width: 50px;
     position: relative;
-    top: 0;
+    top: -1px;
     left: 0;
-    display: block;
+    /* display: block; */
 }
 
 .p-20 {
     padding: 20px;
 }
 
+.pb-20{
+    margin-bottom: 100px;
+}
 .gap {
-    gap: 30px;
+    gap: 50px;
 
 }
 
